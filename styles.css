@@ -84,6 +84,7 @@ nav.wrap{
 .nav-links a:hover{ opacity:1; color: var(--dawn-gold); }
 .nav-menu{ display:flex; align-items:center; gap:40px; }
 .nav-cta{ display:flex; gap:14px; align-items:center; }
+.nav-cta .btn{ padding: 12px 20px; }
 .nav-toggle{
   display:none; flex-direction:column; justify-content:center; gap:5px;
   width:40px; height:40px; background:none; border:none; cursor:pointer; padding:8px;
