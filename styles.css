@@ -303,8 +303,8 @@ footer{ background: var(--ink-deep); color: var(--parchment); padding: 80px 0 32
   .nav-menu.open{ max-height: 420px; }
   .nav-links{ flex-direction:column; align-items:center; gap:0; padding: 8px 24px; text-align:center; }
   .nav-links a{ display:block; padding:14px 0; border-bottom:1px solid var(--line); }
-  .nav-cta{ padding: 20px 24px; }
-  .nav-cta .btn{ width:100%; justify-content:center; }
+  .nav-cta{ padding: 20px 24px; display:flex; justify-content:center; }
+  .nav-cta .btn{ width:auto; justify-content:center; }
   .about-grid, .give-grid{ grid-template-columns: minmax(0,1fr); gap: 40px; }
   .pillars{ grid-template-columns: minmax(0,1fr); }
   .media-grid{ grid-template-columns: minmax(0,1fr); }
