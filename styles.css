@@ -238,6 +238,47 @@ a.media-card:hover{
 .media-card .eyebrow{ color: var(--royal); font-size:0.66rem; margin-bottom:10px; }
 .media-card h3{ font-size: 1.05rem; color: var(--ink); }
 
+/* ===== RGM EXCELLENCY / STORIES ===== */
+.story-grid{
+  display:grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+}
+.story-card{
+  display:block;
+  border: 1px solid var(--line-dark); border-radius: 4px; overflow:hidden;
+  background:#fff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+a.story-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.story-thumb{
+  aspect-ratio: 16/9; background: linear-gradient(135deg, var(--ink), var(--royal));
+  position:relative; overflow:hidden;
+}
+.story-thumb .thumb-img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+}
+.story-thumb .play-btn{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+}
+.story-card .body{ padding: 24px; }
+.story-meta{
+  font-family: var(--mono); font-size: 0.7rem; color: var(--royal);
+  text-transform:uppercase; letter-spacing:0.04em; display:block; margin-bottom: 10px;
+}
+.dark .story-meta{ color: var(--dawn-gold); }
+.story-card h3{ font-size: 1.2rem; color: var(--ink); margin-bottom: 10px; }
+.dark .story-card h3{ color: var(--parchment); }
+.story-card p{ font-size: 0.9rem; color: #5a5f70; }
+.dark .story-card p{ color: rgba(247,243,234,0.72); }
+.story-quote{
+  font-family: var(--display); font-style: italic; font-size: 1rem;
+  color: var(--ink); border-left: 3px solid var(--dawn-gold);
+  padding-left: 16px; margin: 16px 0;
+}
+.story-quote-en{ font-size: 0.82rem; color: #5a5f70; font-style: normal; margin-top:6px; display:block; }
+
 /* ===== GET INVOLVED / GIVE ===== */
 .give-grid{ display:grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items:start; }
 .give-copy p{ color: rgba(247,243,234,0.75); margin-bottom: 18px; }
@@ -299,6 +340,7 @@ footer{ background: var(--ink-deep); color: var(--parchment); padding: 80px 0 32
   .about-grid, .give-grid{ grid-template-columns: minmax(0,1fr); gap: 40px; }
   .pillars{ grid-template-columns: minmax(0,1fr); }
   .media-grid{ grid-template-columns: minmax(0,1fr); }
+  .story-grid{ grid-template-columns: minmax(0,1fr); }
   .event-row{ grid-template-columns: minmax(0,1fr); gap:10px; }
   .footer-grid{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
 }
