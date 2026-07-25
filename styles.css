@@ -199,22 +199,13 @@ section.dark{ background: var(--ink); color: var(--parchment); }
 }
 .dark .tag{ border-color: var(--line); }
 
-/* register form */
-.register-panel{
-  margin-top: 56px; background: var(--ink); color: var(--parchment);
-  padding: 44px; border-radius: 4px;
-}
-.register-panel h3{ font-size:1.5rem; margin-bottom: 8px; }
-.register-panel .note{ font-family: var(--mono); font-size: 0.78rem; color: var(--dawn-gold); margin-bottom: 28px; display:block; }
-.form-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.form-grid .full{ grid-column: 1 / -1; }
+/* form fields (used in give panel) */
 label{ font-size: 0.8rem; opacity:0.8; margin-bottom:6px; display:block; }
 input, select, textarea{
   width:100%; background: rgba(247,243,234,0.06); border: 1px solid var(--line);
   color: var(--parchment); padding: 12px 14px; border-radius: 3px; font-family: var(--body); font-size: 0.92rem;
 }
 input::placeholder, textarea::placeholder{ color: rgba(247,243,234,0.35); }
-.form-grid .full.actions{ margin-top:8px; }
 
 /* ===== MEDIA / SERMONS ===== */
 .media-grid{
@@ -308,7 +299,6 @@ footer{ background: var(--ink-deep); color: var(--parchment); padding: 80px 0 32
   .about-grid, .give-grid{ grid-template-columns: minmax(0,1fr); gap: 40px; }
   .pillars{ grid-template-columns: minmax(0,1fr); }
   .media-grid{ grid-template-columns: minmax(0,1fr); }
-  .form-grid{ grid-template-columns: minmax(0,1fr); }
   .event-row{ grid-template-columns: minmax(0,1fr); gap:10px; }
   .footer-grid{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
 }

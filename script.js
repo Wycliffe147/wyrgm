@@ -75,15 +75,6 @@ document.querySelectorAll('.amt').forEach(btn => {
   });
 });
 
-// Registration form placeholder submit
-const registerForm = document.querySelector('#register form');
-if (registerForm) {
-  registerForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('This form will be connected once the site is live.');
-  });
-}
-
 // Give now button placeholder
 const giveBtn = document.querySelector('#give .btn-primary[data-action="give"]');
 if (giveBtn) {
